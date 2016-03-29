@@ -30,3 +30,5 @@ m4
 *.mod.c
 *.ko
 *.cmd
+
+.dirstamp

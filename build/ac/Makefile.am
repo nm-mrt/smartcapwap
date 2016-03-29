@@ -37,50 +37,50 @@ AM_CFLAGS += -I$(top_srcdir)/build \
 include $(top_srcdir)/build/Makefile_common.am
 
 ac_SOURCES = $(capwap_SOURCES) \
-	$(top_srcdir)/src/common/capwap_event.c \
-	$(top_srcdir)/src/common/capwap_lock.c \
-	$(top_srcdir)/src/common/capwap_rwlock.c \
-	$(top_srcdir)/src/common/capwap_socket.c \
-	$(top_srcdir)/src/ac/ac.c \
-	$(top_srcdir)/src/ac/ac_backend.c \
-	$(top_srcdir)/src/ac/ac_execute.c \
-	$(top_srcdir)/src/ac/ac_session.c \
-	$(top_srcdir)/src/ac/ac_wlans.c \
-	$(top_srcdir)/src/ac/ac_kmod.c \
-	$(top_srcdir)/src/ac/ac_ieee80211_data.c \
-	$(top_srcdir)/src/ac/ac_discovery.c \
-	$(top_srcdir)/src/ac/ac_80211_json.c \
-	$(top_srcdir)/src/ac/ac_80211_json_addwlan.c \
-	$(top_srcdir)/src/ac/ac_80211_json_antenna.c \
-	$(top_srcdir)/src/ac/ac_80211_json_assignbssid.c \
-	$(top_srcdir)/src/ac/ac_80211_json_deletewlan.c \
-	$(top_srcdir)/src/ac/ac_80211_json_directsequencecontrol.c \
-	$(top_srcdir)/src/ac/ac_80211_json_ie.c \
-	$(top_srcdir)/src/ac/ac_80211_json_macoperation.c \
-	$(top_srcdir)/src/ac/ac_80211_json_miccountermeasures.c \
-	$(top_srcdir)/src/ac/ac_80211_json_multidomaincapability.c \
-	$(top_srcdir)/src/ac/ac_80211_json_ofdmcontrol.c \
-	$(top_srcdir)/src/ac/ac_80211_json_rateset.c \
-	$(top_srcdir)/src/ac/ac_80211_json_rsnaerrorreport.c \
-	$(top_srcdir)/src/ac/ac_80211_json_statistics.c \
-	$(top_srcdir)/src/ac/ac_80211_json_supportedrates.c \
-	$(top_srcdir)/src/ac/ac_80211_json_txpower.c \
-	$(top_srcdir)/src/ac/ac_80211_json_txpowerlevel.c \
-	$(top_srcdir)/src/ac/ac_80211_json_updatewlan.c \
-	$(top_srcdir)/src/ac/ac_80211_json_wtpqos.c \
-	$(top_srcdir)/src/ac/ac_80211_json_wtpradioconf.c \
-	$(top_srcdir)/src/ac/ac_80211_json_wtpradiofailalarm.c \
-	$(top_srcdir)/src/ac/ac_80211_json_wtpradioinformation.c \
-	$(top_srcdir)/src/ac/ac_dfa_join.c \
-	$(top_srcdir)/src/ac/ac_dfa_configure.c \
-	$(top_srcdir)/src/ac/ac_dfa_imagedata.c \
-	$(top_srcdir)/src/ac/ac_dfa_datacheck.c \
-	$(top_srcdir)/src/ac/ac_dfa_dtls.c \
-	$(top_srcdir)/src/ac/ac_dfa_run.c \
-	$(top_srcdir)/src/ac/ac_dfa_reset.c \
-	$(top_srcdir)/src/ac/ac_dfa_teardown.c \
-	$(top_srcdir)/src/ac/ac_soap.c \
-	$(top_srcdir)/src/common/binding/ieee80211/ieee80211.c
+	../../src/common/capwap_event.c \
+	../../src/common/capwap_lock.c \
+	../../src/common/capwap_rwlock.c \
+	../../src/common/capwap_socket.c \
+	../../src/ac/ac.c \
+	../../src/ac/ac_backend.c \
+	../../src/ac/ac_execute.c \
+	../../src/ac/ac_session.c \
+	../../src/ac/ac_wlans.c \
+	../../src/ac/ac_kmod.c \
+	../../src/ac/ac_ieee80211_data.c \
+	../../src/ac/ac_discovery.c \
+	../../src/ac/ac_80211_json.c \
+	../../src/ac/ac_80211_json_addwlan.c \
+	../../src/ac/ac_80211_json_antenna.c \
+	../../src/ac/ac_80211_json_assignbssid.c \
+	../../src/ac/ac_80211_json_deletewlan.c \
+	../../src/ac/ac_80211_json_directsequencecontrol.c \
+	../../src/ac/ac_80211_json_ie.c \
+	../../src/ac/ac_80211_json_macoperation.c \
+	../../src/ac/ac_80211_json_miccountermeasures.c \
+	../../src/ac/ac_80211_json_multidomaincapability.c \
+	../../src/ac/ac_80211_json_ofdmcontrol.c \
+	../../src/ac/ac_80211_json_rateset.c \
+	../../src/ac/ac_80211_json_rsnaerrorreport.c \
+	../../src/ac/ac_80211_json_statistics.c \
+	../../src/ac/ac_80211_json_supportedrates.c \
+	../../src/ac/ac_80211_json_txpower.c \
+	../../src/ac/ac_80211_json_txpowerlevel.c \
+	../../src/ac/ac_80211_json_updatewlan.c \
+	../../src/ac/ac_80211_json_wtpqos.c \
+	../../src/ac/ac_80211_json_wtpradioconf.c \
+	../../src/ac/ac_80211_json_wtpradiofailalarm.c \
+	../../src/ac/ac_80211_json_wtpradioinformation.c \
+	../../src/ac/ac_dfa_join.c \
+	../../src/ac/ac_dfa_configure.c \
+	../../src/ac/ac_dfa_imagedata.c \
+	../../src/ac/ac_dfa_datacheck.c \
+	../../src/ac/ac_dfa_dtls.c \
+	../../src/ac/ac_dfa_run.c \
+	../../src/ac/ac_dfa_reset.c \
+	../../src/ac/ac_dfa_teardown.c \
+	../../src/ac/ac_soap.c \
+	../../src/common/binding/ieee80211/ieee80211.c
 
 ac_LDADD = $(CONFIG_LIBS) \
 	$(PTHREAD_LIBS) \

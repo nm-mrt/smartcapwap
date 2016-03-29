@@ -39,24 +39,24 @@ AM_CFLAGS += -I$(top_srcdir)/build \
 include $(top_srcdir)/build/Makefile_common.am
 
 wtp_SOURCES = $(capwap_SOURCES) \
-	$(top_srcdir)/src/wtp/wtp.c \
-	$(top_srcdir)/src/wtp/wtp_kmod.c \
-	$(top_srcdir)/src/wtp/wtp_element_helper.c \
-	$(top_srcdir)/src/wtp/wtp_dfa.c \
-	$(top_srcdir)/src/wtp/wtp_dfa_idle.c \
-	$(top_srcdir)/src/wtp/wtp_dfa_discovery.c \
-	$(top_srcdir)/src/wtp/wtp_dfa_sulking.c \
-	$(top_srcdir)/src/wtp/wtp_dfa_dtls.c \
-	$(top_srcdir)/src/wtp/wtp_dfa_join.c \
-	$(top_srcdir)/src/wtp/wtp_dfa_configure.c \
-	$(top_srcdir)/src/wtp/wtp_dfa_datacheck.c \
-	$(top_srcdir)/src/wtp/wtp_dfa_run.c \
-	$(top_srcdir)/src/wtp/wtp_dfa_reset.c \
-	$(top_srcdir)/src/wtp/wtp_dfa_imagedata.c \
-	$(top_srcdir)/src/wtp/wtp_radio.c \
-	$(top_srcdir)/src/common/binding/ieee80211/ieee80211.c \
-	$(top_srcdir)/src/wtp/binding/ieee80211/netlink_link.c \
-	$(top_srcdir)/src/wtp/binding/ieee80211/wifi_drivers.c
+	../../src/wtp/wtp.c \
+	../../src/wtp/wtp_kmod.c \
+	../../src/wtp/wtp_element_helper.c \
+	../../src/wtp/wtp_dfa.c \
+	../../src/wtp/wtp_dfa_idle.c \
+	../../src/wtp/wtp_dfa_discovery.c \
+	../../src/wtp/wtp_dfa_sulking.c \
+	../../src/wtp/wtp_dfa_dtls.c \
+	../../src/wtp/wtp_dfa_join.c \
+	../../src/wtp/wtp_dfa_configure.c \
+	../../src/wtp/wtp_dfa_datacheck.c \
+	../../src/wtp/wtp_dfa_run.c \
+	../../src/wtp/wtp_dfa_reset.c \
+	../../src/wtp/wtp_dfa_imagedata.c \
+	../../src/wtp/wtp_radio.c \
+	../../src/common/binding/ieee80211/ieee80211.c \
+	../../src/wtp/binding/ieee80211/netlink_link.c \
+	../../src/wtp/binding/ieee80211/wifi_drivers.c
 
 wtp_LDADD = $(CONFIG_LIBS) \
 	$(LIBNL_LIBS)
@@ -66,5 +66,5 @@ wtp_LDADD += $(WOLFSSL_LIBS)
 endif
 
 if BUILD_WTP_WIFI_DRIVERS_NL80211
-wtp_SOURCES += $(top_srcdir)/src/wtp/binding/ieee80211/wifi_nl80211.c
+wtp_SOURCES += ../../src/wtp/binding/ieee80211/wifi_nl80211.c
 endif
