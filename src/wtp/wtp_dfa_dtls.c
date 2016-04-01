@@ -75,7 +75,7 @@ void wtp_start_datachannel(void)
 /* */
 static void wtp_dfa_state_dtlsteardown_timeout(EV_P_ ev_timer *w, int revents)
 {
-	log_printf(LOG_DEBUG, "wtp_dfa_state_dtlsteardown_timeout")
+	log_printf(LOG_DEBUG, "wtp_dfa_state_dtlsteardown_timeout");
 	/* Free and reset resource */
 	if (g_wtp.dtls.enable)
 		capwap_crypt_freesession(&g_wtp.dtls);
