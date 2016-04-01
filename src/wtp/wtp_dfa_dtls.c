@@ -107,12 +107,12 @@ void wtp_dfa_state_dtlsteardown_enter(void)
 {
 	log_printf(LOG_DEBUG, "Entered wtp_dfa_state_dtlsteardown_enter");
 	wtp_timeout_stop_all();
-	log_printf(LOG_DEBUG, "After wtp_timeout_stop")
+	log_printf(LOG_DEBUG, "After wtp_timeout_stop");
 	ev_timer_init(&g_wtp.timercontrol, wtp_dfa_state_dtlsteardown_timeout,
 		      WTP_DTLS_SESSION_DELETE / 1000.0, 0.);
-	log_printf(LOG_DEBUG, "After cv_timer_init")
+	log_printf(LOG_DEBUG, "After cv_timer_init");
 	ev_timer_start(EV_DEFAULT_UC_ &g_wtp.timercontrol);
-	log_printf(LOG_DEBUG, "After cv_timer_start")
+	log_printf(LOG_DEBUG, "After cv_timer_start");
 }
 
 /* */
