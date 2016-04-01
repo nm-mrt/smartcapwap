@@ -1448,6 +1448,8 @@ int main(int argc, char** argv) {
 
 		result = wtp_dfa_running();
 
+		log_printf(LOG_INFO, "wtp_dfa_running returned with result %d", result);
+
 		/* Close sockets */
 		wtp_socket_io_stop();
 		capwap_close_sockets(&g_wtp.net);
